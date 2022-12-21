@@ -1,0 +1,243 @@
+:root {
+    --red-primary: #99133A;
+    --red-secondary: #590B22;
+    --white: #fff;
+    --grey: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Qatar2022';
+    src: url('./FontQatar2022/Qatar2022Arabic-Bold.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Qatar2022', Arial, sans-serif;
+    color: var(--white);
+}
+
+h3 {
+    height: 56px;
+    line-height:72px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--red-primary), var(--red-secondary));
+}
+
+.scoreboard-content {
+    width: 90%;
+    height: 100px;
+    max-width: 1500px;
+    display: flex;
+    background-color: var(--red-primary);
+    border-top: 5px solid var(--white);
+    border-bottom: 5px solid var(--white);
+}
+
+.scoreboard-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+#scoreboard-timer h3 {
+    font-size: 5rem;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    height: 92px;
+}
+
+.team h3 {
+    margin: 0 70px;
+    font-size: 5rem;
+}
+
+.team-flag {
+    width: 150px;
+    height: 92px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 3px solid var(--white);
+}
+
+#scoreboard-numbers {
+    width: 270px;
+    height: 100px;
+    outline: 7px solid var(--red-secondary);
+}
+
+#flag-team-left {
+    background-image: url('https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg');
+}
+
+#flag-team-right {
+    background-image: url('https://static.todamateria.com.br/upload/fr/an/frana_a.jpg');
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#scoreboard-timer {
+    flex: 1;
+}
+
+#scoreboard-info {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#team-right {
+    flex-direction: row-reverse;
+}
+
+#scoreboard-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    position: relative;
+    background-color: var(--red-primary);
+    font-size: 5rem;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#scoreboard-team-left {
+    left: -10px;
+    padding-left: 10px;
+}
+
+#scoreboard-team-right {
+    right: -10px;
+    padding-right: 10px;
+}
+
+.scoreboard-numbers-divisor {
+    width: 57%;
+    margin: auto;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.triangle-scoreboard {
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    position: relative;
+    z-index: 999;
+}
+
+#triangle-left-scoreboard {
+    border-right: 46px solid var(--red-primary);
+    right: -14px;
+}
+
+#triangle-right-scoreboard {
+    border-left: 46px solid var(--red-primary);
+    left: -14px;
+}
+
+#square-separator {
+    width: 20px;
+    height: 20px;
+    background-color: var(--red-secondary);
+    rotate: 45deg;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+}
+
+#triangle-top {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid grey;
+    position: absolute;
+    top: -5px;
+}
+
+#triangle-top-inner {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--white);
+    position: absolute;
+    top: -5px;
+}
+
+#triangle-bottom {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid grey;
+    position: absolute;
+    bottom: -5px;
+}
+
+#triangle-bottom-inner {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--white);
+    position: absolute;
+    bottom: -5px;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#square-1 {
+    border-right: 5px solid var(--grey);
+    border-bottom: 5px solid var(--grey);
+    left: 15px;
+    top: -5px;
+}
+
+#square-2 {
+    border-left: 5px solid var(--grey);
+    border-bottom: 5px solid var(--grey);
+    right: 15px;
+    top: -5px;
+}
+
+#square-3 {
+    border-top: 5px solid var(--grey);
+    border-right: 5px solid var(--grey);
+    left: 15px;
+    bottom: -5px;
+}
+
+#square-4 {
+    border-top: 5px solid var(--grey);
+    border-left: 5px solid var(--grey);
+    right: 15px;
+    bottom: -5px;
+}
