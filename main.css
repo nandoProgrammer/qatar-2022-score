@@ -83,11 +83,11 @@ h3 {
 }
 
 #flag-team-left {
-    background-image: url('https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg');
+    background-image: url('./assets/argentina-flag.webp');
 }
 
 #flag-team-right {
-    background-image: url('https://static.todamateria.com.br/upload/fr/an/frana_a.jpg');
+    background-image: url('./assets/france-flag.webp');
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
